@@ -1,0 +1,44 @@
+<tal:manager replace="structure provider:collage.ContentManager" />
+
+<tal:folder define="plone_view here/@@plone;
+                    toLocalizedTime nocall: plone_view/toLocalizedTime;
+                    isAnon view/isAnon;
+                    mtool view/mtool;
+                    portal_url view/portal_url;
+                    normalizeString view/normalizeString;
+                    site_properties view/site_properties">
+
+  <div class="contentleadimage_folder_summary">
+
+	  <h2 metal:define-macro="title"
+	      tal:define="kssview context/@@collage_kss_helper"
+	      tal:attributes="id string:title-${kssview/getUniqueIdentifier};
+			      class python: kssview.getKssClasses('title')"
+	      tal:condition="here/Title">
+	    <span metal:define-slot="inside"
+		  tal:replace="here/Title">title</span>
+	  </h2>
+
+	  <p>
+	    <span metal:define-macro="description"
+		  tal:define="kssview context/@@collage_kss_helper"
+		  tal:attributes="id string:description-${kssview/getUniqueIdentifier};
+				  class python: kssview.getKssClasses('description')"
+		  tal:condition="here/Description">
+	      <span metal:define-slot="inside"
+		    tal:replace="here/Description">description</span>
+	    </span>
+	  </p>
+
+	   <tal:listing i18n:domain="plone"
+		 define="kssClassesView context/@@collage_kss_helper/getKssView;
+			 getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+			 templateId string:folder_leadimage_view;">
+	      <metal:listing-macro use-macro="here/folder_leadimage_view/macros/listing" />
+
+	   </tal:listing>
+
+  </div>
+
+</tal:folder>
+

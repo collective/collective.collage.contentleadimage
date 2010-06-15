@@ -1,0 +1,13 @@
+Changelog
+=========
+
+0.1 - 15 June 2010
+------------------
+
+* Created initial documentation for the product
+  [davidjb] 
+* Developed initial views from existing Collage layouts, mixed together with
+  views from collective.contentleadimage
+  [davidjb]
+* Initial release 
+
