@@ -33,3 +33,9 @@ Setting the layout
    content you just added.  Click this.
 #. Select *Summary (lead images)* and your new layout will appear.
 #. Assign lead images to content to have them appear in this layout.
+
+Todo
+====
+
+#. Some unit testing
+
