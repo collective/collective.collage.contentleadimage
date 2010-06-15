@@ -1,19 +1,23 @@
 Installation
 ============
 
- * Add ``collective.collage.contentleadimage`` to the list of eggs to install, e.g.:
+* Add ``collective.collage.contentleadimage`` to the list of eggs to install, e.g.:
 
-    [buildout]
-    ...
-    eggs =
-        ...
-        collective.collage.contentleadimage
+::
 
-  * If you're using a version of Plone earlier than 3.3, tell the plone.recipe.zope2instance recipe to install a ZCML slug:
+   [buildout]
+   ...
+   eggs =
+      collective.collage.contentleadimage
 
-    [instance]
-    recipe = plone.recipe.zope2instance
-    ...
-    zcml =
-        collective.collage.blogging
+* If you're using a version of Plone earlier than 3.3, tell the plone.recipe.zope2instance recipe to install a ZCML slug:
+
+::
+
+   [instance]
+   recipe = plone.recipe.zope2instance
+   ...
+   zcml =
+      ...
+      collective.collage.blogging
 
