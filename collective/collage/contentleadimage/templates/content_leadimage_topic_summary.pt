@@ -41,7 +41,8 @@
 
     </tal:listing>
 
-    <a tal:attributes="href here/absolute_url"
+    <a class="moreItemsLink"
+       tal:attributes="href here/absolute_url"
        tal:condition="python:len(topicContents) ==  here.itemCount"
        i18n:domain="plone" i18n:translate="box_morelink">More...</a>
 
