@@ -19,5 +19,5 @@ Installation
    ...
    zcml =
       ...
-      collective.collage.blogging
+      collective.collage.contentleadimage
 
