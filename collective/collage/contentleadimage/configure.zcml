@@ -21,4 +21,13 @@
      layer="Products.Collage.interfaces.ICollageBrowserLayer"
      />
 
+  <browser:page
+     name="single_lead_image"
+     for="Products.ATContentTypes.content.base.ATCTMixin"
+     permission="zope.Public"
+     template="templates/content_leadimage_single_item.pt"
+     class=".browser.SingleContentLeadImageCollageView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
 </configure>

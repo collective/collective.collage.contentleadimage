@@ -9,7 +9,8 @@ images for News Items, the only default type that images can be assigned
 to.  This package uses the existing 'Folder lead-image view' provided by
 collective.contentleadimage and displays the content within a Collage.  Both
 Folders and Collections (Topics) can have this new Collage view applied to
-them.
+them. Additionally you can select the "Single (lead image)" view, if you 
+want just one item with a lead image as a teaser element.
 
 Usage
 =====
@@ -32,6 +33,8 @@ Setting the layout
 #. In the *Compose* page for the Collage, locate the *Layout* link for the
    content you just added.  Click this.
 #. Select *Summary (lead images)* and your new layout will appear.
+#. Optional select *Single (lead images)* if you want just the selected 
+   element to appear.
 #. Assign lead images to content to have them appear in this layout.
 
 Todo

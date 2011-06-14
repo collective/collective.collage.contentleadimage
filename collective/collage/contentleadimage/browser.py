@@ -3,3 +3,6 @@ from collective.contentleadimage.browser.folder_leadimage_view import FolderLead
 
 class ContentLeadImageCollageView(BaseView, FolderLeadImageView):
     title = u'Summary (lead images)'
+
+class SingleContentLeadImageCollageView(BaseView, FolderLeadImageView):
+    title = u'Single (lead image)'
