@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2.dev'
 
 setup(name='collective.collage.contentleadimage',
       version=version,
       description="Views for Products.Collage that display content with images from collective.contentleadimage",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "INSTALL.txt")).read()  + "\n" +
                        open(os.path.join("docs", "AUTHORS.txt")).read()  + "\n" +
                        open(os.path.join("docs", "LICENSE.txt")).read()  + "\n" +
@@ -29,7 +29,7 @@ setup(name='collective.collage.contentleadimage',
           'setuptools',
           'Products.Collage',
           'collective.contentleadimage',
-          'collective.fastview',
+          #'collective.fastview',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
