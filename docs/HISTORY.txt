@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.1 - 15 June 2010
-------------------
+0.1-FHNW1 (2013-03-18)
+----------------------
 
 * Created initial documentation for the product
   [davidjb] 
